@@ -78,4 +78,4 @@ VALUES
 
 ## some notes
 
-you can also use pgloader
+you can also use pgloader  && dbt also a better one
