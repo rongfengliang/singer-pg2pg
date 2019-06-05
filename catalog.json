@@ -1,0 +1,145 @@
+{
+  "streams": [
+    {
+      "table_name": "userapps",
+      "stream": "userapps",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "table-key-properties": [
+              "id"
+            ],
+            "selected": true,
+            "replication-method": "FULL_TABLE",
+            "schema-name": "public",
+            "database-name": "postgres",
+            "row-count": 0,
+            "is-view": false
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "sql-datatype": "integer",
+            "inclusion": "automatic",
+            "selected-by-default": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "username"
+          ],
+          "metadata": {
+            "sql-datatype": "text",
+            "inclusion": "available",
+            "selected-by-default": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "userappname"
+          ],
+          "metadata": {
+            "sql-datatype": "text",
+            "inclusion": "available",
+            "selected-by-default": true
+          }
+        }
+      ],
+      "tap_stream_id": "postgres-public-userapps",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": [
+              "integer"
+            ],
+            "minimum": -2147483648,
+            "maximum": 2147483647
+          },
+          "username": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "userappname": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "definitions": {
+          "sdc_recursive_integer_array": {
+            "type": [
+              "null",
+              "integer",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/definitions/sdc_recursive_integer_array"
+            }
+          },
+          "sdc_recursive_number_array": {
+            "type": [
+              "null",
+              "number",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/definitions/sdc_recursive_number_array"
+            }
+          },
+          "sdc_recursive_string_array": {
+            "type": [
+              "null",
+              "string",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/definitions/sdc_recursive_string_array"
+            }
+          },
+          "sdc_recursive_boolean_array": {
+            "type": [
+              "null",
+              "boolean",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/definitions/sdc_recursive_boolean_array"
+            }
+          },
+          "sdc_recursive_timestamp_array": {
+            "type": [
+              "null",
+              "string",
+              "array"
+            ],
+            "format": "date-time",
+            "items": {
+              "$ref": "#/definitions/sdc_recursive_timestamp_array"
+            }
+          },
+          "sdc_recursive_object_array": {
+            "type": [
+              "null",
+              "object",
+              "array"
+            ],
+            "items": {
+              "$ref": "#/definitions/sdc_recursive_object_array"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
