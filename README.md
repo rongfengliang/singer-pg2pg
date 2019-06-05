@@ -1,4 +1,4 @@
-# transform data from pg 2 pg
+# sync data from pg 2 pg
 
 ## how to running
 
